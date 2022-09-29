@@ -27,7 +27,7 @@ p {
 button {
     border: 1px solid #002330;
     background-color: #008097;
-    color: black;
+    color: #002330;
     padding: 10px 30px;
     font-size: 16px;
     cursor: pointer;
@@ -49,10 +49,26 @@ a:link {
   }
   
 
+#moreLess {
+    border: 1px solid #002330;
+    background-color: #ffffff;
+    color: #002330;
+    padding: 10px 30px;
+    font-size: 16px;
+    cursor: pointer;
+
+
+}
+
+
+#more {
+    display: none;
+}
+
+
 
   
 /* homepage */
-
 /* .header-image {
     background-position: center;
     background-repeat: no-repeat;
