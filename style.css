@@ -1,17 +1,51 @@
+/* general */
+
 body {
+    margin: 0px;
 }
 
 h1 {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Helvetica;
     color: #008097;
+    text-align: center;
 
 }
 
 p {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Helvetica;
     color: #002330;
+    text-align: center;
+    margin-bottom: 30px;
+
 }
+
+.btn1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border: 2px solid black;
+    background-color: white;
+    color: black;
+    padding: 14px 28px;
+    font-size: 16px;
+    cursor: pointer;
+
+}
+
+
   
+/* homepage */
+
+.header-image {
+    background-position: center;
+    background-repeat: no-repeat;
+
+    }
+
+
+/* nav setup */
+
 li {
     float: left;
   }
@@ -20,14 +54,8 @@ li a {
     display: block;
     color: white;
     text-align: center;
-    padding: 14px 14px;
+    padding: 16px 16px;
     text-decoration: none;
-  }
-
-  .float:right {
-    padding: 14px 14px;
-
-
   }
 
 /* Hover color */
@@ -45,9 +73,12 @@ li a:hover {
     font-style: normal;
   }
 
+
+
+/* footer */
+
   .footer {
     position: fixed;
-    left: 0;
     bottom: 0;
     width: 100%;
     background-color: #84c7cf;
@@ -55,24 +86,59 @@ li a:hover {
   }
 
 
-  .gallery {
-    padding: 20px;
-    font-size: 30px;
-    text-align: center;
 
-  }
+/* images */
 
-  /* @media (min-width: 480px) {
-    .gallery {
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 200px);
+    justify-content: center;
+    align-content: center;
+    grid-gap:30px;
+}
+
+.grid img {
+    width: 200px;
+    height: 200px;
+    cursor: pointer;
+}
+
+
+/* lighbox */
+
+#lightbox {
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #00000066;
+    display: none;
+}
+
+
+#lightbox.active {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* ------ */
+
+  @media (min-width: 480px) {
+    .grid {
+        width: 100%;
+
         
     }
-  } */
+  }
 
 
 
 
 
-  div.gallery {
+  /* div.gallery {
     border: 1px solid #ccc;
   }
   
@@ -111,7 +177,7 @@ li a:hover {
     .responsive {
       width: 100%;
     }
-  }
+  } */
   
 
 
