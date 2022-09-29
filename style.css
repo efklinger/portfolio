@@ -1,5 +1,4 @@
 body {
-    /* background-color: azure; */
 }
 
 h1 {
@@ -10,10 +9,8 @@ h1 {
 
 p {
     font-family: Arial, Helvetica, sans-serif;
-    color: #003a50;
+    color: #002330;
 }
-
-
   
 li {
     float: left;
@@ -23,29 +20,38 @@ li a {
     display: block;
     color: white;
     text-align: center;
-    padding: 14px 16px;
+    padding: 14px 14px;
     text-decoration: none;
   }
 
   .float:right {
-    padding: 14px 16px;
+    padding: 14px 14px;
 
 
   }
 
 /* Hover color */
 li a:hover {
-    background-color: #008097;
+    background-color: #008699;
   }
 
   .nav {
     list-style-type: none;
-    /* margin: 0;
-    padding: 0; */
+    margin: 0;
+    padding: 0;
     overflow: hidden;
-    background-color: #003a50;
+    background-color:#002330;
     font-family: Arial, Helvetica, sans-serif;
     font-style: normal;
+  }
+
+  .footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #84c7cf;
+    text-align: center;
   }
 
 
@@ -61,6 +67,8 @@ li a:hover {
         
     }
   } */
+
+
 
 
 
@@ -95,7 +103,7 @@ li a:hover {
   @media only screen and (max-width: 700px) {
     .responsive {
       width: 49.99999%;
-      margin: 6px 0;
+      margin: 10px 0;
     }
   }
   
@@ -105,46 +113,9 @@ li a:hover {
     }
   }
   
-  .clearfix:after {
-    content: "";
-    display: table;
-    clear: both;
-  }
 
 
 
 
 
 
-  /* Style inputs with type="text", select elements and textareas */
-input[type=text], select, textarea {
-    width: 100%; /* Full width */
-    padding: 12px; /* Some padding */ 
-    border: 1px solid #ccc; /* Gray border */
-    box-sizing: border-box; /* Make sure that padding and width stays in place */
-    margin-top: 6px; /* Add a top margin */
-    margin-bottom: 16px; /* Bottom margin */
-    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
-  }
-  
-  /* Style the submit button with a specific background color etc */
-  input[type=submit] {
-    background-color: #04AA6D;
-    color: white;
-    padding: 12px 20px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-  }
-  
-  /* When moving the mouse over the submit button, add a darker green color */
-  input[type=submit]:hover {
-    background-color: #45a049;
-  }
-  
-  /* Add a background color and some padding around the form */
-  .container {
-    border-radius: 5px;
-    background-color: #f2f2f2;
-    padding: 20px;
-  }
